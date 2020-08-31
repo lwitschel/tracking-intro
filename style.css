@@ -1,0 +1,65 @@
+/*------ALLGEMEIN-------*/
+
+:root {
+    --very_dark_blue: hsl(230, 29%, 20%);
+    --dark_blue: hsl(230, 11%, 40%);
+    --blue: hsl(231, 7%, 65%);
+    --light_blue: hsl(207, 33%, 95%);
+}
+
+
+body{
+    width: 100%;
+    font-size: 18px;
+    font-family: Barlow;
+    font-weight: 400;
+    color: var(--very_dark_blue);
+    margin: 20px;
+}
+
+/*------FARBE-------*/
+
+.blue {
+    color: var(--blue);
+    letter-spacing: 0.3em;
+}
+
+.dark_blue {
+    color: var(--dark_blue);
+}
+
+/*------SCHRIFT-------*/
+
+button, h1, ul {
+    font-family: Barlow Condensed;
+}
+
+.versal {
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+
+
+/*------NAVIGATION-------*/
+
+ul {
+    list-style-type: none;
+    padding: 20px;
+    width: 80%;
+    margin-top: 50px;
+}
+
+li {
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+
+
+}
+
+
+
