@@ -7,21 +7,20 @@
     --light_blue: hsl(207, 33%, 95%);
 }
 
-
 body{
-    width: 100%;
     font-size: 18px;
     font-family: Barlow;
     font-weight: 400;
     color: var(--very_dark_blue);
-    margin: 20px;
+    margin: 10% 10% 10% 10%;
 }
 
 /*------FARBE-------*/
 
 .blue {
     color: var(--blue);
-    letter-spacing: 0.3em;
+    letter-spacing: 0.2em;
+    font-size: 12px;
 }
 
 .dark_blue {
@@ -34,6 +33,14 @@ button, h1, ul {
     font-family: Barlow Condensed;
 }
 
+h1 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+}
+
 .versal {
     text-transform: uppercase;
 }
@@ -42,24 +49,73 @@ button, h1, ul {
     font-weight: 700;
 }
 
-
-
 /*------NAVIGATION-------*/
 
 ul {
+    position: absolute;
+    text-align: center;
     list-style-type: none;
-    padding: 20px;
+    padding: 0;
     width: 80%;
+    margin: auto;
     margin-top: 50px;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 0px 23px -9px rgba(0,0,0,0.60);
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    display: none;
 }
 
 li {
-    padding: 10px;
+    position: relative;
+    width: auto;
+    padding: 0;
+    margin: 10px;
     text-align: center;
     font-weight: 700;
-
-
 }
 
+.first-child {
+    margin-top: 20px;
+}
 
+.last-child {
+    margin-bottom: 20px;
+    border-top: var(--light_blue) 1px solid;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+
+/*------BILDER-------*/
+
+.imagecontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    align-items: flex-start;
+}
+
+.menu {
+    width: 20px;
+    height: 20px;
+    align-items: flex-end;
+}
+
+.burger:onclick ul {
+    display: unset;
+}
+
+.PC {
+    width: 100%;
+}
 
