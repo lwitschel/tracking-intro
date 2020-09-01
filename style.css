@@ -92,15 +92,15 @@ li {
 li a:link {
     font-weight: 700;
     text-decoration-line: none;
-    color: var(--very_dark_blue);
+    color: var(--dark_blue);
 }
 
 li a:visited {
-    color: var(--very_dark_blue);
+    color: var(--dark_blue);
 }
 
 li a:hover {
-    color: var(--very_dark_blue);
+    color: var(--dark_blue);
 }
 
 li a:active {
@@ -111,11 +111,23 @@ li a:active {
     padding-top: 10px;
 }
 
+.last-child a:link {
+    color: var(--blue);
+}
+
+.last-child a:visited {
+    color: var(--blue);
+}
+
+.last-child a:active {
+    color: var(--light_blue);
+}
+
 .last-child {
     margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    border-top: var(--light_blue) 1px solid;
+    border-top: var(--light_blue) 2px solid;
     width: auto;
     padding-left: 10%;
     padding-right: 10%;
@@ -142,14 +154,6 @@ li a:active {
     align-items: flex-start;
 }
 
-.menu {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    align-items: flex-end;
-    z-index: 2;
-}
-
 .PC {
     position: relative;
     padding: 30px 0 30px 0px;
@@ -159,9 +163,9 @@ li a:active {
 }
 
 #square {
-    position: relative;
-    width: 50%; 
-    height: 42%;
+    position: absolute;
+    width: 47%; 
+    height: 50%;
     background: var(--light_blue); 
     border-radius: 0 0 0 60px;
     top: 0;
@@ -189,7 +193,8 @@ li a:active {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
-    border: solid black 0px; 
+    border: solid black 0px;
+    white-space: nowrap; 
 }
 
 .b_schwarz {
@@ -206,9 +211,28 @@ li a:active {
     display: none;
 }
 
-.burger {
+#menu {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    align-items: flex-end;
+    z-index: 2;
     border: none;
-    background: none;
+}
+
+.background {
+    background-image: url(./images/icon-close.svg);
+    background-color: var(--light_blue);
+}
+
+.burger {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    align-items: flex-end;
+    z-index: 2;
+    border: none;
+    background-color: none;
 }
 
 .burger:focus {
