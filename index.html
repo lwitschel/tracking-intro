@@ -9,12 +9,13 @@
   <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" async></script>
   <title>Frontend Mentor | Project tracking intro component</title>
 </head>
 
 <body>
 
-  <ul class="versal">
+  <ul class="versal invisible" id="list">
     <li class="first-child"><a href="#">Product</a></li>
     <li><a href="#">Features</a></li>
     <li><a href="#">Pricing</a></li>
@@ -23,19 +24,30 @@
 
   <div class="imagecontainer">
     <img src="./images/logo.svg"  class="logo">
-    <a class="burger"><img src="./images/icon-hamburger.svg" class="menu"></a>
+    <button class="burger" onclick="myFunction()"><img src="./images/icon-hamburger.svg" class="menu"></button>
   </div> 
 
-  <img src="./images/illustration-devices.svg" class="PC">
+  <div class="backgroundcontainer">
+    <img src="./images/illustration-devices.svg" class="PC">
+    
+    <div id="square"></div>
+  </div>
 
-  <button  class="versal bold b_schwarz">New</button>
-  <p class="versal blue">Monograph Dashboard</p>
+  <div class="contentcontainer">
+  <div class="new_container">
+    <button  class="versal bold b_schwarz">New</button>
+    <p class="versal blue">Monograph Dashboard</p>
+  </div>
 
   <h1 class="versal">Powerful insights into your team</h1>
   <p class="dark_blue">Project planning and time tracking for agile teams</p>
 
-  <button class="versal bold b_rot">Schedule a demo</button>
-  <p class="versal blue">to see a live preview</p>
+  <div class="cta_container">
+    <button class="versal bold b_rot">Schedule a demo</button>
+    <p class="versal blue">to see a preview</p>
+  </div>
+  
+  </div>
 
 </body>
 </html>
