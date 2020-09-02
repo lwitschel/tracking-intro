@@ -267,6 +267,10 @@ li a:active {
 
 @media only screen and (min-width: 950px) {
 
+    .burger {
+        display: none;
+    }
+
     body {
         margin: 50px;
     }
@@ -274,6 +278,7 @@ li a:active {
     .contentcontainer {
         order: 1; 
         align-self: flex-start;
+        width: 450px;
     }
 
     h1 {
@@ -305,18 +310,15 @@ li a:active {
         margin-left: 0%;
     }
 
-    .contentcontainer {
-        width: 350px;
-    }
-
     #square {
-        height: 250px;
-        width: 600px;
+        height: 280px;
+        width: 560px;
+        border-radius: 0 0 0 45px;
     }
 
     /*------BUTTON-------*/
 
-    .b_rot:active {
+    .b_rot:hover {
         background-color: rgba(248, 104, 104, 0.7);
     }
 
@@ -330,7 +332,7 @@ li a:active {
     ul {
         position: absolute;
         text-align: center;
-        width: 80%;
+        width: 85%;
         margin: auto;
         margin-top: 0px;
         background: none;
@@ -340,6 +342,7 @@ li a:active {
         align-items: center;
         z-index: 10;
         justify-content: flex-end;
+        font-size: 14px;
     }
 
     li {
@@ -389,11 +392,16 @@ li a:active {
     
     .last-child {
         margin: 0;
+        margin-left: 20px;
         border-top: none;
         width: auto;
         padding: 0px;
         padding-left: 40px;
-        list-style-type: disc;
+        list-style: disc outside;
+    }
+
+    .last-child::marker {
+        margin-right: 20px;
     }
 
     .invisible {
@@ -412,17 +420,14 @@ li a:active {
 
 @media only screen and (min-width: 1150px) {
     .PC {
-        order: 2; 
-        align-self: flex-end;
+        width: 92%;
         position: relative;
-        z-index: 1;
-        width: 85%;
-        margin-left: 20%;
+        right: -200px;
     }
 
     #square {
-        height: 250px;
-        width: 60%;
+        height: 300px;
+        width: 52%;
     }
 
     .burger {
